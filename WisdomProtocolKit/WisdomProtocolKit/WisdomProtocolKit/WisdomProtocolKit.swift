@@ -11,19 +11,20 @@ import UIKit
 
 public class WisdomProtocolKit: NSObject {
     
-    // MARK: - get wisdom protocol with protocol name
-    // - parame: String
-    // - return: Protocol?
-    dynamic public static func wisdomProtocol(protocolName: String) -> Protocol?{
-        return WisdomProtocolManager.shared.wisdomProtocol(protocolName: protocolName)
-    }
-    
     
     // MARK: - regist protocol class config module
     // - parame: [WisdomRouterConfigModel]
     dynamic public static func registProtocolClassConfig(configs: [WisdomProtocolConfigModel],
                                                          errorClosure: WisdomProtocolErrorClosure){
         WisdomProtocolManager.shared.registProtocolClassConfig(configs: configs, errorClosure: errorClosure)
+    }
+    
+    
+    // MARK: - get wisdom protocol with protocol name
+    // - parame: String
+    // - return: Protocol?
+    dynamic public static func wisdomProtocol(protocolName: String) -> Protocol?{
+        return WisdomProtocolManager.shared.wisdomProtocol(protocolName: protocolName)
     }
     
     

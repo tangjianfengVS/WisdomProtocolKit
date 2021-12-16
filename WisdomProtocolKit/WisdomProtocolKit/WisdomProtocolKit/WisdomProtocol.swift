@@ -93,3 +93,46 @@ import UIKit
     static func wisdomProtocolClass(data: Any, returnClosure: WisdomProtocolReturnClosure)
 }
 
+
+
+// MARK: - Swift Base Protocol
+public protocol WisdomSwiftProtocol {
+        
+    // - parameter : Any
+    func wisdomProtocolSwift(data: Any)
+    
+    // - parameter : Any, WisdomProtocolClosure
+    func wisdomProtocolSwift(data: Any, closure: WisdomProtocolClosure)
+    
+    // - parameter : Any, WisdomProtocolReturnClosure
+    func wisdomProtocolSwift(data: Any, returnClosure: WisdomProtocolReturnClosure)
+}
+
+
+
+// MARK: - Swift Class Protocol
+public protocol WisdomSwiftClassProtocol {
+        
+    // - parameter : Any
+    static func wisdomProtocolSwiftClass(data: Any)
+    
+    // - parameter : Any, WisdomProtocolClosure
+    static func wisdomProtocolSwiftClass(data: Any, closure: WisdomProtocolClosure)
+    
+    // - parameter : Any, WisdomProtocolReturnClosure
+    static func wisdomProtocolSwiftClass(data: Any, returnClosure: WisdomProtocolReturnClosure)
+}
+
+
+
+// MARK: - Regist Protocol
+@objc public protocol WisdomRegistProtocol {
+        
+    // - parameter : Any
+    static func wisdomProtocolRegist(data: Any)
+}
+
+
+//struct sss: WisdomRegistProtocol {
+    
+//}

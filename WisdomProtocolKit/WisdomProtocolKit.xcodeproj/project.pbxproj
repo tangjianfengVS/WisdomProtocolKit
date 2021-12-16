@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6E5745276B4CE400DCFBA0 /* WisdomProtocolRegist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */; };
 		3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */; };
 		3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */; };
 		3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolRegist.swift; sourceTree = "<group>"; };
 		3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolConfig.swift; sourceTree = "<group>"; };
 		3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolManager.swift; sourceTree = "<group>"; };
 		3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolKit.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */,
+				3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */,
 				3E732C042769D99200DEB737 /* WisdomProtocol.swift */,
 				3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */,
 				3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */,
@@ -169,6 +172,7 @@
 				3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */,
 				3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */,
 				3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */,
+				3E6E5745276B4CE400DCFBA0 /* WisdomProtocolRegist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

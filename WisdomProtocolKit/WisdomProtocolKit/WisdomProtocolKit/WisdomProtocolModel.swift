@@ -27,6 +27,7 @@ public struct WisdomProtocolConfigModel {
 
 
 
+// MARK: - Class' Protocol
 @objc public class WisdomProtocolObject: NSObject, WisdomProtocol, WisdomClassProtocol {
     
     static public func wisdomProtocolClass(data: Any){

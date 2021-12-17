@@ -12,10 +12,17 @@ import UIKit
 public class WisdomProtocolKit: NSObject {
     
     
+    // MARK: - regist protocol
+    // - to realize: WisdomRegistProtocol -> static func registProtocolClass()
+    @objc public class func wisdomProtocolRegist(){
+        WisdomProtocolManager.shared.wisdomProtocolRegist()
+    }
+    
+    
     // MARK: - regist protocol class config module
     // - parame: [WisdomRouterConfigModel]
-    dynamic public static func registProtocolClassConfig(configs: [WisdomProtocolConfigModel],
-                                                         errorClosure: WisdomProtocolErrorClosure){
+    @objc public class func registProtocolClassConfig(configs: [WisdomProtocolConfigModel],
+                                                      errorClosure: WisdomProtocolErrorClosure){
         WisdomProtocolManager.shared.registProtocolClassConfig(configs: configs, errorClosure: errorClosure)
     }
     
@@ -23,7 +30,7 @@ public class WisdomProtocolKit: NSObject {
     // MARK: - get wisdom protocol with protocol name
     // - parame: String
     // - return: Protocol?
-    dynamic public static func wisdomProtocol(protocolName: String) -> Protocol?{
+    @objc public class func wisdomProtocol(protocolName: String) -> Protocol?{
         return WisdomProtocolManager.shared.wisdomProtocol(protocolName: protocolName)
     }
     
@@ -31,7 +38,7 @@ public class WisdomProtocolKit: NSObject {
     // MARK: - get class from protocol
     // - parame: Protocol
     // - return: AnyClass?
-    dynamic public static func classFromProtocol(fromProtocol: Protocol?) -> AnyClass?{
+    @objc public class func classFromProtocol(fromProtocol: Protocol?) -> AnyClass?{
         return WisdomProtocolManager.shared.classFromProtocol(fromProtocol: fromProtocol)
     }
     
@@ -40,7 +47,7 @@ public class WisdomProtocolKit: NSObject {
     // - parame: AnyClass?
     // - parame: Protocol
     // - return: Bool
-    dynamic public static func classConformProtocol(targetClass: AnyClass?, toProtocol: Protocol) -> Bool{
+    @objc public class func classConformProtocol(targetClass: AnyClass?, toProtocol: Protocol) -> Bool{
         if let resClass = targetClass {
             return resClass.conforms(to: toProtocol)
         }

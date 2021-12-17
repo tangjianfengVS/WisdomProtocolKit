@@ -19,3 +19,29 @@ class ViewController: UIViewController {
 
 }
 
+
+
+class TwoViewController: UIViewController, WisdomRegistProtocol {
+    
+    static func registerProtocolClass() {
+        let model = WisdomProtocolConfigModel(configClass: self, configProtocol: TwoViewVCProtocol.self)
+
+        WisdomProtocolKit.registProtocolClassConfig(configs: [model]) { errorList in
+            print(errorList)
+        }
+    }
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.white
+        // Do any additional setup after loading the view.
+    }
+
+}
+
+
+@objc protocol TwoViewVCProtocol {
+    
+}

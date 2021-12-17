@@ -8,7 +8,8 @@
 
 import UIKit
 
-struct WisdomProtocolManager {
+
+class WisdomProtocolManager {
     
     static var shared = WisdomProtocolManager()
     
@@ -16,12 +17,48 @@ struct WisdomProtocolManager {
     
     private var protocols: [Protocol] = []
     
+    private var registState = false
+    
+    
+    func sss() -> String{
+        let date = NSDate()
+
+        let timeFormatter = DateFormatter()
+
+        timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+
+        let strNowTime = timeFormatter.string(from: date as Date) as String
+        return strNowTime
+    }
+    
+    
+    func wisdomProtocolRegist() {
+        if registState {
+            return
+        }
+        
+        registState = true
+        print(sss())//41.446 - 43.026
+        let expectedClassCount = objc_getClassList(nil, 0)
+        let allClasses = UnsafeMutablePointer<AnyClass>.allocate(capacity: Int(expectedClassCount))
+        let autoreleasingAllClasses = AutoreleasingUnsafeMutablePointer<AnyClass>(allClasses)
+        let actualClassCount:Int32 = objc_getClassList(autoreleasingAllClasses, expectedClassCount)
+
+//        for i in 0 ..< actualClassCount {
+//            let currentClass: AnyClass = allClasses[Int(i)]
+//            if class_conformsToProtocol(currentClass, WisdomRegistProtocol.self) {
+//                currentClass.wisdomProtocolRegist()
+//            }
+//        }
+        print(sss())
+    }
+    
     
     // MARK: - regist protocol class config module
     // - Class to conform many Protocol
     // - Protocol to only Class
     // - WisdomProtocol can not regist
-    mutating func registProtocolClassConfig(configs: [WisdomProtocolConfigModel], errorClosure: WisdomProtocolErrorClosure){
+    func registProtocolClassConfig(configs: [WisdomProtocolConfigModel], errorClosure: WisdomProtocolErrorClosure){
         var errorList: [String] = []
         
         for configModel in configs {

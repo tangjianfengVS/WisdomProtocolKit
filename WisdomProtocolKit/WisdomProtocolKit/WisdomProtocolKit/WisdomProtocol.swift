@@ -9,14 +9,11 @@
 import UIKit
 
 
-// MARK: - Config Protocol
-@objc public protocol WisdomConfigProtocol {
-    
-    // register all module
-    static func registerConfigModule()
+// MARK: - Regist Protocol
+@objc public protocol WisdomRegistProtocol {
     
     // register all class
-    static func registerProtocolClass()
+    static func registProtocolClass()
 }
 
 
@@ -122,17 +119,3 @@ public protocol WisdomSwiftClassProtocol {
     // - parameter : Any, WisdomProtocolReturnClosure
     static func wisdomProtocolSwiftClass(data: Any, returnClosure: WisdomProtocolReturnClosure)
 }
-
-
-
-// MARK: - Regist Protocol
-@objc public protocol WisdomRegistProtocol {
-        
-    // - parameter : Any
-    static func wisdomProtocolRegist(data: Any)
-}
-
-
-//struct sss: WisdomRegistProtocol {
-    
-//}

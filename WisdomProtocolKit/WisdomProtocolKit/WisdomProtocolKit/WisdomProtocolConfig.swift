@@ -18,7 +18,7 @@ public typealias WisdomProtocolErrorClosure = ([String]) -> Void
 
 public let WisdomProtocols: [String] = [NSStringFromProtocol(WisdomProtocol.self),
                                         NSStringFromProtocol(WisdomClassProtocol.self),
-                                        NSStringFromProtocol(WisdomConfigProtocol.self),
+                                        NSStringFromProtocol(WisdomRegistProtocol.self),
                                         NSStringFromProtocol(WisdomViewProtocol.self),
                                         NSStringFromProtocol(WisdomControllerProtocol.self)]
 

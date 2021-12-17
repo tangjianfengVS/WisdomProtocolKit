@@ -10,7 +10,7 @@ import UIKit
 
 
 //MARK: - Router Config Module' Model
-public struct WisdomProtocolConfigModel {
+@objc public class WisdomProtocolConfigModel: NSObject {
 
     public let configClass: AnyClass
     

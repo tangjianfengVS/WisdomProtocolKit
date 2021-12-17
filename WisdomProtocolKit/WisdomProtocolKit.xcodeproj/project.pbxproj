@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E6E5745276B4CE400DCFBA0 /* WisdomProtocolRegist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */; };
 		3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */; };
 		3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */; };
 		3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */; };
 		3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */; };
 		3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */; };
 		3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C042769D99200DEB737 /* WisdomProtocol.swift */; };
+		3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */; };
 		3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABA2768AE24000B5021 /* AppDelegate.swift */; };
 		3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABE2768AE24000B5021 /* ViewController.swift */; };
 		3EB09AC22768AE24000B5021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB09AC02768AE24000B5021 /* Main.storyboard */; };
@@ -22,13 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolRegist.swift; sourceTree = "<group>"; };
 		3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolConfig.swift; sourceTree = "<group>"; };
 		3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolManager.swift; sourceTree = "<group>"; };
 		3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolKit.swift; sourceTree = "<group>"; };
 		3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolUI.swift; sourceTree = "<group>"; };
 		3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolModel.swift; sourceTree = "<group>"; };
 		3E732C042769D99200DEB737 /* WisdomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocol.swift; sourceTree = "<group>"; };
+		3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolKit+Regist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit+Regist.h"; sourceTree = "<group>"; };
+		3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WisdomProtocolKit+Regist.m"; sourceTree = "<group>"; };
 		3EB09AB72768AE24000B5021 /* WisdomProtocolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomProtocolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB09ABA2768AE24000B5021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB09ABE2768AE24000B5021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +55,14 @@
 			isa = PBXGroup;
 			children = (
 				3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */,
-				3E6E5744276B4CE400DCFBA0 /* WisdomProtocolRegist.swift */,
 				3E732C042769D99200DEB737 /* WisdomProtocol.swift */,
 				3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */,
 				3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */,
 				3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */,
 				3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */,
+				3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolKit+Regist.h */,
+				3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */,
+				3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */,
 			);
 			path = WisdomProtocolKit;
 			sourceTree = "<group>";
@@ -125,6 +129,7 @@
 				TargetAttributes = {
 					3EB09AB62768AE24000B5021 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -165,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */,
+				3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */,
 				3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */,
 				3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */,
 				3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */,
@@ -172,7 +178,6 @@
 				3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */,
 				3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */,
 				3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */,
-				3E6E5745276B4CE400DCFBA0 /* WisdomProtocolRegist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +324,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = K642JBDXU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WisdomProtocolKit/Info.plist;
@@ -337,6 +344,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = starImage.WisdomProtocolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WisdomProtocolKit/WisdomProtocolKit/WisdomProtocolKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,8 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = K642JBDXU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WisdomProtocolKit/Info.plist;
@@ -365,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = starImage.WisdomProtocolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WisdomProtocolKit/WisdomProtocolKit/WisdomProtocolKit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

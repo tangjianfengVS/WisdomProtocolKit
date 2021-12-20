@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: ThreeViewProtocol.self)
         if routerClass != nil && WisdomProtocolKit.classConformProtocol(targetClass: routerClass,
                                                                         toProtocol: WisdomControllerObjcProtocol.self){
-            let _ = routerClass!.wisdomProtocolControllerClass(rootVC: self, data: UIColor.white)
+            let _ = routerClass!.wisdomProtocolObjcClass(rootVC: self, data: UIColor.white)
         }
     }
     

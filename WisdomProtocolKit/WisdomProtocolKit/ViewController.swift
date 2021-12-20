@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     
     @objc func clickRoutorVCBtn() {
         
+        // 协议 - 路由跳转
         let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: TwoViewVCProtocol.self)
         if let resClass = routerClass as? WisdomProtocolController.Type {
             

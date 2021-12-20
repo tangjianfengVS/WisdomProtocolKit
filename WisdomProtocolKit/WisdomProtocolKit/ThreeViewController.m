@@ -8,8 +8,8 @@
 #import "ThreeViewController.h"
 #import "WisdomProtocolKit-Swift.h"
 
-//SWIFT_SUBCLASS
-@interface ThreeViewController ()//<WisdomControllerProtocol>
+
+@interface ThreeViewController ()<WisdomControllerObjcProtocol>
 
 @end
 
@@ -70,6 +70,23 @@
 //    [rootVC presentViewController:VC animated:true completion:nil];
 //    return VC;
 //}
+
++ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC {
+    return nil;
+}
+
++ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data {
+    return nil;
+}
+
++ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data closure:(void (^ _Nonnull)(id _Nonnull))closure {
+    return nil;
+}
+
++ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data returnClosure:(id  _Nonnull (^ _Nonnull)(id _Nonnull))returnClosure {
+    return nil;
+}
+
 
 @end
 

@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//#define SWIFT_SUBCLASS __attribute__((objc_subclassing_restricted))
 
-//SWIFT_SUBCLASS
 @interface ThreeViewController : UIViewController <WisdomRegistProtocol>
 
 @end

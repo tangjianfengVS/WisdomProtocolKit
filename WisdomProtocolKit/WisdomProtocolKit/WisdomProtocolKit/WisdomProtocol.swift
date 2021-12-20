@@ -18,50 +18,6 @@ import UIKit
 
 
 
-// MARK: - Router Controller Protocol Of UIViewController
-@objc public protocol WisdomControllerProtocol where Self: WisdomProtocolController {
-    
-    // - parameter : WisdomProtocolController
-    @discardableResult
-    static func wisdomProtocolController(rootVC: UIViewController) -> WisdomProtocolController
-    
-    // - parameter : WisdomProtocolController, Any
-    @discardableResult
-    static func wisdomProtocolController(rootVC: UIViewController, data: Any) -> WisdomProtocolController
-    
-    // - parameter : WisdomProtocolController, Any, WisdomRouterClosure
-    @discardableResult
-    static func wisdomProtocolController(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController
-    
-    // - parameter : WisdomProtocolController, Any, WisdomRouterReturnClosure
-    @discardableResult
-    static func wisdomProtocolController(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController
-}
-
-
-
-// MARK: - Router View Protocol Of UIView
-@objc public protocol WisdomViewProtocol where Self: WisdomProtocolView {
-    
-    // - parameter : UIView
-    // - return    : WisdomRouterView
-    static func wisdomProtocolView(superview: UIView) -> WisdomProtocolView
-    
-    // - parameter : UIView, Any
-    // - return    : WisdomRouterView
-    static func wisdomProtocolView(superview: UIView, data: Any) -> WisdomProtocolView
-    
-    // - parameter : UIView, Any, WisdomProtocolClosure
-    // - return    : WisdomRouterView
-    static func wisdomProtocolView(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView
-    
-    // - parameter : UIView, Any, WisdomProtocolReturnClosure
-    // - return    : WisdomRouterView
-    static func wisdomProtocolView(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView
-}
-
-
-
 // MARK: - Base Protocol
 @objc public protocol WisdomProtocol {
         
@@ -118,4 +74,48 @@ public protocol WisdomSwiftClassProtocol {
     
     // - parameter : Any, WisdomProtocolReturnClosure
     static func wisdomProtocolSwiftClass(data: Any, returnClosure: WisdomProtocolReturnClosure)
+}
+
+
+
+// MARK: - Router Controller Protocol Of UIViewController
+@objc public protocol WisdomControllerProtocol where Self: WisdomProtocolController {
+    
+    // - parameter : WisdomProtocolController
+    @discardableResult
+    static func wisdomProtocolControllerCla(rootVC: UIViewController) -> WisdomProtocolController
+    
+    // - parameter : WisdomProtocolController, Any
+    @discardableResult
+    static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any) -> WisdomProtocolController
+    
+    // - parameter : WisdomProtocolController, Any, WisdomRouterClosure
+    @discardableResult
+    static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController
+    
+    // - parameter : WisdomProtocolController, Any, WisdomRouterReturnClosure
+    @discardableResult
+    static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController
+}
+
+
+
+// MARK: - Router View Protocol Of UIView
+@objc public protocol WisdomViewProtocol where Self: WisdomProtocolView {
+    
+    // - parameter : UIView
+    // - return    : WisdomRouterView
+    static func wisdomProtocolViewCla(superview: UIView) -> WisdomProtocolView
+    
+    // - parameter : UIView, Any
+    // - return    : WisdomRouterView
+    static func wisdomProtocolViewCla(superview: UIView, data: Any) -> WisdomProtocolView
+    
+    // - parameter : UIView, Any, WisdomProtocolClosure
+    // - return    : WisdomRouterView
+    static func wisdomProtocolViewCla(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView
+    
+    // - parameter : UIView, Any, WisdomProtocolReturnClosure
+    // - return    : WisdomRouterView
+    static func wisdomProtocolViewCla(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView
 }

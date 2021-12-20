@@ -10,36 +10,36 @@ import UIKit
 
 @objc public class WisdomProtocolView: UIView, WisdomViewProtocol, WisdomProtocol {
     
-    public static func wisdomProtocolView(superview: UIView) -> WisdomProtocolView {
-        return wisdomProtocol_View(superview: superview)
+    public static func wisdomProtocolViewCla(superview: UIView) -> WisdomProtocolView {
+        return wisdomProtocol_ViewCla(superview: superview)
     }
     
-    public static func wisdomProtocolView(superview: UIView, data: Any) -> WisdomProtocolView {
-        return wisdomProtocol_View(superview: superview, data: data)
+    public static func wisdomProtocolViewCla(superview: UIView, data: Any) -> WisdomProtocolView {
+        return wisdomProtocol_ViewCla(superview: superview, data: data)
     }
     
-    public static func wisdomProtocolView(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView {
-        return wisdomProtocol_View(superview: superview, data: data, closure: closure)
+    public static func wisdomProtocolViewCla(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView {
+        return wisdomProtocol_ViewCla(superview: superview, data: data, closure: closure)
     }
     
-    public static func wisdomProtocolView(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView {
-        return wisdomProtocol_View(superview: superview, data: data, returnClosure: returnClosure)
+    public static func wisdomProtocolViewCla(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView {
+        return wisdomProtocol_ViewCla(superview: superview, data: data, returnClosure: returnClosure)
     }
     
     
-    public class func wisdomProtocol_View(superview: UIView) -> WisdomProtocolView {
+    public class func wisdomProtocol_ViewCla(superview: UIView) -> WisdomProtocolView {
         fatalError("Must Override")
     }
 
-    public class func wisdomProtocol_View(superview: UIView, data: Any) -> WisdomProtocolView {
+    public class func wisdomProtocol_ViewCla(superview: UIView, data: Any) -> WisdomProtocolView {
         fatalError("Must Override")
     }
 
-    public class func wisdomProtocol_View(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView {
+    public class func wisdomProtocol_ViewCla(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolView {
         fatalError("Must Override")
     }
 
-    public class func wisdomProtocol_View(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView {
+    public class func wisdomProtocol_ViewCla(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolView {
         fatalError("Must Override")
     }
     
@@ -63,39 +63,39 @@ import UIKit
 @objc public class WisdomProtocolController: UIViewController, WisdomControllerProtocol, WisdomProtocol {
     
     @discardableResult
-    public static func wisdomProtocolController(rootVC: UIViewController) -> WisdomProtocolController{
-        return wisdomProtocol_Controller(rootVC: rootVC)
+    public static func wisdomProtocolControllerCla(rootVC: UIViewController) -> WisdomProtocolController{
+        return wisdomProtocol_ControllerCla(rootVC: rootVC)
     }
     
     @discardableResult
-    public static func wisdomProtocolController(rootVC: UIViewController, data: Any) -> WisdomProtocolController{
-        return wisdomProtocol_Controller(rootVC: rootVC, data: data)
+    public static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any) -> WisdomProtocolController{
+        return wisdomProtocol_ControllerCla(rootVC: rootVC, data: data)
     }
     
     @discardableResult
-    public static func wisdomProtocolController(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController{
-        return wisdomProtocol_Controller(rootVC: rootVC, data: data, closure: closure)
+    public static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController{
+        return wisdomProtocol_ControllerCla(rootVC: rootVC, data: data, closure: closure)
     }
     
     @discardableResult
-    public static func wisdomProtocolController(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController{
-        return wisdomProtocol_Controller(rootVC: rootVC, data: data, returnClosure: returnClosure)
+    public static func wisdomProtocolControllerCla(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController{
+        return wisdomProtocol_ControllerCla(rootVC: rootVC, data: data, returnClosure: returnClosure)
     }
     
     
-    public class func wisdomProtocol_Controller(rootVC: UIViewController) -> WisdomProtocolController{
+    public class func wisdomProtocol_ControllerCla(rootVC: UIViewController) -> WisdomProtocolController{
         fatalError("Must Override")
     }
     
-    public class func wisdomProtocol_Controller(rootVC: UIViewController, data: Any) -> WisdomProtocolController{
+    public class func wisdomProtocol_ControllerCla(rootVC: UIViewController, data: Any) -> WisdomProtocolController{
         fatalError("Must Override")
     }
     
-    public class func wisdomProtocol_Controller(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController{
+    public class func wisdomProtocol_ControllerCla(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> WisdomProtocolController{
         fatalError("Must Override")
     }
     
-    public class func wisdomProtocol_Controller(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController{
+    public class func wisdomProtocol_ControllerCla(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> WisdomProtocolController{
         fatalError("Must Override")
     }
     

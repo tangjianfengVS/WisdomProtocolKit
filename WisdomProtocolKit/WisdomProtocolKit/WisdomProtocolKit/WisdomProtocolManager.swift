@@ -20,11 +20,9 @@ class WisdomProtocolManager {
     private var registState = false
     
     
-    func sss() -> String{
+    func getCurrentTimeStr() -> String{
         let date = NSDate()
-
         let timeFormatter = DateFormatter()
-
         timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
 
         let strNowTime = timeFormatter.string(from: date as Date) as String
@@ -32,25 +30,27 @@ class WisdomProtocolManager {
     }
     
     
+    // MARK: - response regist protocol
     func wisdomProtocolRegist() {
         if registState {
             return
         }
         
         registState = true
-        print(sss())//41.446 - 43.026
+        //print(getCurrentTimeStr())
         let expectedClassCount = objc_getClassList(nil, 0)
         let allClasses = UnsafeMutablePointer<AnyClass>.allocate(capacity: Int(expectedClassCount))
         let autoreleasingAllClasses = AutoreleasingUnsafeMutablePointer<AnyClass>(allClasses)
         let actualClassCount:Int32 = objc_getClassList(autoreleasingAllClasses, expectedClassCount)
 
-//        for i in 0 ..< actualClassCount {
-//            let currentClass: AnyClass = allClasses[Int(i)]
-//            if class_conformsToProtocol(currentClass, WisdomRegistProtocol.self) {
-//                currentClass.wisdomProtocolRegist()
-//            }
-//        }
-        print(sss())
+        for i in 0 ..< actualClassCount {
+            let currentClass: AnyClass = allClasses[Int(i)]
+            
+            if class_conformsToProtocol(currentClass, WisdomRegistProtocol.self) {
+                currentClass.registProtocolClass()
+            }
+        }
+        //print(getCurrentTimeStr())
     }
     
     

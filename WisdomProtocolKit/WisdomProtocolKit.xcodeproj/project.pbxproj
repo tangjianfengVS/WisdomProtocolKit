@@ -14,6 +14,7 @@
 		3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */; };
 		3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C042769D99200DEB737 /* WisdomProtocol.swift */; };
 		3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */; };
+		3E8DD74527701E0C00128FA7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DD74427701E0C00128FA7 /* TwoViewController.swift */; };
 		3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABA2768AE24000B5021 /* AppDelegate.swift */; };
 		3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABE2768AE24000B5021 /* ViewController.swift */; };
 		3EB09AC22768AE24000B5021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB09AC02768AE24000B5021 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolKit+Regist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit+Regist.h"; sourceTree = "<group>"; };
 		3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WisdomProtocolKit+Regist.m"; sourceTree = "<group>"; };
+		3E8DD74427701E0C00128FA7 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		3EB09AB72768AE24000B5021 /* WisdomProtocolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomProtocolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB09ABA2768AE24000B5021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB09ABE2768AE24000B5021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3E732BFE2769D99200DEB737 /* WisdomProtocolKit */,
 				3EB09ABA2768AE24000B5021 /* AppDelegate.swift */,
 				3EB09ABE2768AE24000B5021 /* ViewController.swift */,
+				3E8DD74427701E0C00128FA7 /* TwoViewController.swift */,
 				3EB09AC02768AE24000B5021 /* Main.storyboard */,
 				3EB09AC32768AE25000B5021 /* Assets.xcassets */,
 				3EB09AC52768AE25000B5021 /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 				3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */,
 				3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */,
 				3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */,
+				3E8DD74527701E0C00128FA7 /* TwoViewController.swift in Sources */,
 				3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */,
 				3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */,
 				3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */,

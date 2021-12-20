@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         // 协议 - 路由跳转
         let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: ThreeViewProtocol.self)
         if routerClass != nil && WisdomProtocolKit.classConformProtocol(targetClass: routerClass,
-                                                                        toProtocol: WisdomControllerProtocol.self){
+                                                                        toProtocol: WisdomControllerObjcProtocol.self){
             let _ = routerClass!.wisdomProtocolControllerClass(rootVC: self, data: UIColor.white)
         }
     }

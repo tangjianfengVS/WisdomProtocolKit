@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E507CA127703EC600CCB8F7 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E507CA027703EC600CCB8F7 /* ThreeViewController.m */; };
 		3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */; };
 		3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */; };
 		3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E507C9F27703EC600CCB8F7 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		3E507CA027703EC600CCB8F7 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolConfig.swift; sourceTree = "<group>"; };
 		3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolManager.swift; sourceTree = "<group>"; };
 		3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolKit.swift; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				3EB09ABA2768AE24000B5021 /* AppDelegate.swift */,
 				3EB09ABE2768AE24000B5021 /* ViewController.swift */,
 				3E8DD74427701E0C00128FA7 /* TwoViewController.swift */,
+				3E507C9F27703EC600CCB8F7 /* ThreeViewController.h */,
+				3E507CA027703EC600CCB8F7 /* ThreeViewController.m */,
 				3EB09AC02768AE24000B5021 /* Main.storyboard */,
 				3EB09AC32768AE25000B5021 /* Assets.xcassets */,
 				3EB09AC52768AE25000B5021 /* LaunchScreen.storyboard */,
@@ -174,6 +179,7 @@
 			files = (
 				3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */,
 				3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */,
+				3E507CA127703EC600CCB8F7 /* ThreeViewController.m in Sources */,
 				3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */,
 				3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */,
 				3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */,

@@ -45,7 +45,7 @@ class WisdomProtocolManager {
 
         for i in 0 ..< actualClassCount {
             let currentClass: AnyClass = allClasses[Int(i)]
-            
+
             if class_conformsToProtocol(currentClass, WisdomRegistProtocol.self) {
                 currentClass.registProtocolClass()
             }

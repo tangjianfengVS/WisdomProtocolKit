@@ -17,12 +17,13 @@ import UIKit
     public let configProtocol: Protocol
 
     public let configProtocolStr: String
-
-    public init(configClass: AnyClass, configProtocol: Protocol) {
+    
+    @objc public init(configClass: AnyClass, configProtocol: Protocol) {
         self.configClass = configClass
         self.configProtocol = configProtocol
         self.configProtocolStr = NSStringFromProtocol(configProtocol)
     }
+    
 }
 
 

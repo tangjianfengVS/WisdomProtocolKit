@@ -27,7 +27,7 @@ class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
     
     
     // 实现：类协议 - rootVC: UIViewController
-    override class func wisdomProtocol_ControllerCla(rootVC: UIViewController) -> WisdomProtocolController {
+    override class func wisdomProtocol_ControllerClass(rootVC: UIViewController) -> WisdomProtocolController {
         let VC = Self.init()
         VC.modalPresentationStyle = .fullScreen
         rootVC.present(VC, animated: true, completion: nil)
@@ -36,7 +36,7 @@ class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
     
     
     // 实现：类协议
-    override class func wisdomProtocol_ControllerCla(rootVC: UIViewController, data: Any) -> WisdomProtocolController {
+    override class func wisdomProtocol_ControllerClass(rootVC: UIViewController, data: Any) -> WisdomProtocolController {
         let VC = Self.init()
         VC.modalPresentationStyle = .fullScreen
         

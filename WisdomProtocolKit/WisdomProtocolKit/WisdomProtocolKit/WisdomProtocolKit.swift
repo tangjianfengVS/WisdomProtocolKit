@@ -21,9 +21,9 @@ public class WisdomProtocolKit: NSObject {
     
     // MARK: - regist protocol class config module
     // - parame: [WisdomRouterConfigModel]
-    @objc public class func registProtocolClassConfig(configs: [WisdomProtocolConfigModel],
-                                                      errorClosure: WisdomProtocolErrorClosure){
-        WisdomProtocolManager.shared.registProtocolClassConfig(configs: configs, errorClosure: errorClosure)
+    @objc public class func registProtocolClassConfigs(configs: [WisdomProtocolConfigModel],
+                                                       errorClosure: WisdomProtocolErrorClosure){
+        WisdomProtocolManager.shared.registProtocolClassConfigs(configs: configs, errorClosure: errorClosure)
     }
     
     

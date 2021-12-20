@@ -58,7 +58,7 @@ class WisdomProtocolManager {
     // - Class to conform many Protocol
     // - Protocol to only Class
     // - WisdomProtocol can not regist
-    func registProtocolClassConfig(configs: [WisdomProtocolConfigModel], errorClosure: WisdomProtocolErrorClosure){
+    func registProtocolClassConfigs(configs: [WisdomProtocolConfigModel], errorClosure: WisdomProtocolErrorClosure){
         var errorList: [String] = []
         
         for configModel in configs {

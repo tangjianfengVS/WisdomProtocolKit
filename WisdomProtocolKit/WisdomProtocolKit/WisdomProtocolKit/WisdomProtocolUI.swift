@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @objc public class WisdomProtocolView: UIView, WisdomViewProtocol, WisdomProtocol {
     
     public static func wisdomProtocolViewCla(superview: UIView) -> WisdomProtocolView {

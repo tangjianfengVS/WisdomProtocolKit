@@ -102,6 +102,11 @@ class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
             self?.dismiss(animated: true)
         }
     }
+    
+    
+    @objc public class func getProtocol()->Protocol {
+        return TwoViewVCProtocol.self
+    }
 
 }
 

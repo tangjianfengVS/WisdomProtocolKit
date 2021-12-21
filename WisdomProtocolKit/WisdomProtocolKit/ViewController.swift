@@ -23,13 +23,13 @@ class ViewController: UIViewController {
         // WisdomProtocolKit: 路由控制器跳转
         view.addSubview(swiftBtn)
         
-        swiftBtn.frame = CGRect.init(x: 30, y: 80, width: UIScreen.main.bounds.width-60, height: 40)
+        swiftBtn.frame = CGRect.init(x: 30, y: 120, width: UIScreen.main.bounds.width-60, height: 40)
         
         swiftBtn.layer.borderColor = UIColor.red.cgColor
         
         swiftBtn.layer.borderWidth = 2
         
-        swiftBtn.setTitle("To Swift Demo: 路由控制器跳转", for: .normal)
+        swiftBtn.setTitle("Swift To Swift Page: 路由控制器跳转", for: .normal)
         
         swiftBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         
@@ -40,13 +40,13 @@ class ViewController: UIViewController {
         // WisdomProtocolKit: 路由控制器跳转
         view.addSubview(ocBtn)
         
-        ocBtn.frame = CGRect.init(x: 30, y: 150, width: UIScreen.main.bounds.width-60, height: 40)
+        ocBtn.frame = CGRect.init(x: 30, y: 190, width: UIScreen.main.bounds.width-60, height: 40)
         
         ocBtn.layer.borderColor = UIColor.blue.cgColor
         
         ocBtn.layer.borderWidth = 2
         
-        ocBtn.setTitle("To OC Demo: 路由控制器跳转", for: .normal)
+        ocBtn.setTitle("Swift To OC Page: 路由控制器跳转", for: .normal)
         
         ocBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     
     @objc func clickRoutorSwiftBtn() {
         
-        // 协议 - 路由跳转
+        // 协议 - 路由跳转 
         let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: TwoViewVCProtocol.self)
         if let resClass = routerClass as? WisdomProtocolController.Type {
             
@@ -73,6 +73,7 @@ class ViewController: UIViewController {
         let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: ThreeViewProtocol.self)
         if routerClass != nil && WisdomProtocolKit.classConformProtocol(targetClass: routerClass,
                                                                         toProtocol: WisdomControllerObjcProtocol.self){
+            
             let _ = routerClass!.wisdomProtocolControlObjcClass(rootVC: self, data: UIColor.white)
         }
     }

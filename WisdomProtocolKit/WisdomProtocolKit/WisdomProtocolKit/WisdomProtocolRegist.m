@@ -6,13 +6,17 @@
 //
 
 #import "WisdomProtocolRegist.h"
-#import "WisdomProtocolKit-Swift.h"
-
+#import <objc/runtime.h>
 
 @implementation WisdomProtocolRegist
 
 + (void)load {
-    [WisdomProtocolKit wisdomProtocolRegist];
+    Class protocolKitCla = objc_getClass("WisdomProtocolKit.WisdomProtocolKit");
+    SEL sel = NSSelectorFromString(@"wisdomProtocolRegist");
+    
+    IMP imp = [protocolKitCla methodForSelector:sel];
+    void (*func)(id, SEL) = (void *)imp;
+    func(protocolKitCla, sel);
 }
 
 @end

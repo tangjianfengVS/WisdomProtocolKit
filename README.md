@@ -35,6 +35,7 @@ View实现协议：
         fatalError("Must Override")
     }
 
+
 Controller实现协议：
     public class func wisdomProtocol_ControllerClass(rootVC: UIViewController) -> WisdomProtocolController{
         fatalError("Must Override")
@@ -89,7 +90,7 @@ Controller实现协议：
     }
 
     -(void)clickRoutorSwiftBtn{
-        // 协议 - 路由跳转 - OC Swift
+        // 协议 - 路由跳转 - OC to Swift
     
         Protocol *twoViewVCProtocol = [TwoViewController getProtocol];
         Class tagterCla = [WisdomProtocolKit classFromProtocolFromProtocol: twoViewVCProtocol];
@@ -99,5 +100,3 @@ Controller实现协议：
            [tagterCla wisdomProtocolControllerClassWithRootVC:self data:[UIColor whiteColor]];
        }
     }
-
-

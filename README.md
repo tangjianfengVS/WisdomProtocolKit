@@ -64,3 +64,40 @@ Controller实现协议：
     public func wisdomProtocol(data: Any, returnClosure: WisdomProtocolReturnClosure) {
         fatalError("Must Override")
     }
+
+
+协议路由使用案例：--------------------------------------------------------------------------------------
+    @objc func clickRoutorSwiftBtn() {
+        
+        // 协议 - 路由跳转 to swift VC
+        let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: TwoViewVCProtocol.self)
+        if let resClass = routerClass as? WisdomProtocolController.Type {
+            
+            resClass.wisdomProtocolControllerClass(rootVC: self, data: UIColor.white)
+        }
+    }
+    
+    @objc func clickRoutorObjcBtn() {
+        
+        // 协议 - 路由跳转 to objc VC
+        let routerClass: AnyClass? = WisdomProtocolKit.classFromProtocol(fromProtocol: ThreeViewProtocol.self)
+        if routerClass != nil && WisdomProtocolKit.classConformProtocol(targetClass: routerClass,
+                                                                        toProtocol: WisdomControllerObjcProtocol.self){
+            
+            let _ = routerClass!.wisdomProtocolControlObjcClass(rootVC: self, data: UIColor.white)
+        }
+    }
+
+    -(void)clickRoutorSwiftBtn{
+        // 协议 - 路由跳转 - OC Swift
+    
+        Protocol *twoViewVCProtocol = [TwoViewController getProtocol];
+        Class tagterCla = [WisdomProtocolKit classFromProtocolFromProtocol: twoViewVCProtocol];
+
+        if ([WisdomProtocolKit isFromWisdomProtocolControllerWithSubclass:tagterCla]) {
+    
+           [tagterCla wisdomProtocolControllerClassWithRootVC:self data:[UIColor whiteColor]];
+       }
+    }
+
+

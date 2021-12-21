@@ -66,7 +66,7 @@
 
 
 -(void)clickRoutorSwiftBtn{
-    // 协议 - 路由跳转
+    // 协议 - 路由跳转 - OC Swift
     
     Protocol *twoViewVCProtocol = [TwoViewController getProtocol];
     Class tagterCla = [WisdomProtocolKit classFromProtocolFromProtocol: twoViewVCProtocol];

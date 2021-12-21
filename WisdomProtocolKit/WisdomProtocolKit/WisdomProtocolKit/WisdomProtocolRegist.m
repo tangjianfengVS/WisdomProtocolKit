@@ -5,14 +5,11 @@
 //  Created by tangjianfeng on 2021/12/17.
 //
 
-#import "WisdomProtocolKit+Regist.h"
-
-@interface WisdomProtocolKit (Regist)
-
-@end
+#import "WisdomProtocolRegist.h"
+#import "WisdomProtocolKit-Swift.h"
 
 
-@implementation WisdomProtocolKit (Regist)
+@implementation WisdomProtocolRegist
 
 + (void)load {
     [WisdomProtocolKit wisdomProtocolRegist];

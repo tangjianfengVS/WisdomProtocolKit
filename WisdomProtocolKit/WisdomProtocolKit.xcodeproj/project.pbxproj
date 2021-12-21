@@ -14,7 +14,7 @@
 		3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */; };
 		3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */; };
 		3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C042769D99200DEB737 /* WisdomProtocol.swift */; };
-		3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */; };
+		3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */; };
 		3E8DD74527701E0C00128FA7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DD74427701E0C00128FA7 /* TwoViewController.swift */; };
 		3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABA2768AE24000B5021 /* AppDelegate.swift */; };
 		3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABE2768AE24000B5021 /* ViewController.swift */; };
@@ -33,8 +33,8 @@
 		3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolModel.swift; sourceTree = "<group>"; };
 		3E732C042769D99200DEB737 /* WisdomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocol.swift; sourceTree = "<group>"; };
 		3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit-Bridging-Header.h"; sourceTree = "<group>"; };
-		3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolKit+Regist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit+Regist.h"; sourceTree = "<group>"; };
-		3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WisdomProtocolKit+Regist.m"; sourceTree = "<group>"; };
+		3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WisdomProtocolRegist.h; sourceTree = "<group>"; };
+		3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WisdomProtocolRegist.m; sourceTree = "<group>"; };
 		3E8DD74427701E0C00128FA7 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		3EB09AB72768AE24000B5021 /* WisdomProtocolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomProtocolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB09ABA2768AE24000B5021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 				3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */,
 				3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */,
 				3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */,
-				3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolKit+Regist.h */,
-				3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m */,
+				3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolRegist.h */,
+				3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */,
 				3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */,
 			);
 			path = WisdomProtocolKit;
@@ -178,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */,
-				3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolKit+Regist.m in Sources */,
+				3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolRegist.m in Sources */,
 				3E507CA127703EC600CCB8F7 /* ThreeViewController.m in Sources */,
 				3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */,
 				3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */,

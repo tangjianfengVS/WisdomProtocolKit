@@ -1,16 +1,15 @@
 //
-//  WisdomProtocolKit+Regist.h
+//  WisdomProtocolRegist.h
 //  WisdomProtocolKit
 //
 //  Created by tangjianfeng on 2021/12/17.
 //
 
 #import <Foundation/Foundation.h>
-#import "WisdomProtocolKit-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WisdomProtocolKit (Regist)
+@interface WisdomProtocolRegist: NSObject
 
 @end
 

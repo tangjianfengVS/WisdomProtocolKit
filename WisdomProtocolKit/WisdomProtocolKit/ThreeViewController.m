@@ -10,7 +10,7 @@
 
 
 @interface ThreeViewController ()<WisdomControllerObjcProtocol>
-
+@property(strong, nonatomic) CloseBtn *closeBtn;
 @end
 
 
@@ -31,6 +31,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
+    
+    _closeBtn = [[CloseBtn alloc] init];
+    
+    [self.view addSubview: _closeBtn];
+    
+    __weak __typeof(self)weakSelf = self;
+    _closeBtn.closure = ^{
+        
+        [weakSelf dismissViewControllerAnimated:true completion:nil];
+    };
 }
 
 

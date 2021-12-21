@@ -14,6 +14,45 @@ import UIKit
 }
 
 
+
+@objc public class CloseBtn: UIButton{
+    
+    @objc public var closure: (()->Void)?
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.frame = CGRect.init(x: UIScreen.main.bounds.width-60, y: 50, width: 35, height: 35)
+        
+        layer.borderColor = UIColor.red.cgColor
+        
+        layer.borderWidth = 1.5
+        
+        setTitle("返回", for: .normal)
+        
+        titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        
+        setTitleColor(UIColor.red, for: .normal)
+        
+        addTarget(self, action: #selector(clickCloseBtn), for: .touchUpInside)
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    @objc func clickCloseBtn(){
+        if closure != nil {
+            closure!()
+        }
+    }
+}
+
+
+
 class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
 
     // 协议注册
@@ -49,11 +88,20 @@ class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
     }
     
     
+    let closeBtn = CloseBtn()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
+        
+        view.addSubview(closeBtn)
+        
+        closeBtn.closure = {[weak self] in
+            self?.dismiss(animated: true)
+        }
     }
 
 }
+

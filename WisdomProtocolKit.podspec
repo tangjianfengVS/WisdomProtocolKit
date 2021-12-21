@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WisdomProtocolKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A wisdom protocol SDK"
   s.description  = "A wisdom protocol SDK.A protocol specifies the methods and attributes necessary to implement a particular function.
 All types that meet the requirements of the agreement are called conform.

@@ -126,16 +126,20 @@ public protocol WisdomSwiftClassProtocol {
 @objc public protocol WisdomControllerObjcProtocol where Self: UIViewController {
     
     // - parameter : UIViewController
-    static func wisdomProtocolObjcClass(rootVC: UIViewController) -> UIViewController
+    // - return    : UIViewController
+    static func wisdomProtocolControlObjcClass(rootVC: UIViewController) -> UIViewController
 
     // - parameter : UIViewController, Any
-    static func wisdomProtocolObjcClass(rootVC: UIViewController, data: Any) -> UIViewController
+    // - return    : UIViewController
+    static func wisdomProtocolControlObjcClass(rootVC: UIViewController, data: Any) -> UIViewController
 
     // - parameter : UIViewController, Any, WisdomProtocolClosure
-    static func wisdomProtocolObjcClass(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> UIViewController
+    // - return    : UIViewController
+    static func wisdomProtocolControlObjcClass(rootVC: UIViewController, data: Any, closure: WisdomProtocolClosure) -> UIViewController
 
     // - parameter : UIViewController, Any, WisdomProtocolReturnClosure
-    static func wisdomProtocolObjcClass(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> UIViewController
+    // - return    : UIViewController
+    static func wisdomProtocolControlObjcClass(rootVC: UIViewController, data: Any, returnClosure: WisdomProtocolReturnClosure) -> UIViewController
 }
 
 
@@ -144,14 +148,18 @@ public protocol WisdomSwiftClassProtocol {
 @objc public protocol WisdomViewObjcProtocol where Self: UIView {
     
     // - parameter : UIView
-    static func wisdomProtocolObjcClass(superview: UIView) -> UIView
+    // - return    : UIView
+    static func wisdomProtocolViewObjcClass(superview: UIView) -> UIView
 
     // - parameter : UIView, Any
-    static func wisdomProtocolObjcClass(superview: UIView, data: Any) -> UIView
+    // - return    : UIView
+    static func wisdomProtocolViewObjcClass(superview: UIView, data: Any) -> UIView
 
     // - parameter : UIView, Any, WisdomProtocolClosure
-    static func wisdomProtocolObjcClass(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> UIView
+    // - return    : UIView
+    static func wisdomProtocolViewObjcClass(superview: UIView, data: Any, closure: WisdomProtocolClosure) -> UIView
 
     // - parameter : UIView, Any, WisdomProtocolReturnClosure
-    static func wisdomProtocolObjcClass(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> UIView
+    // - return    : UIView
+    static func wisdomProtocolViewObjcClass(superview: UIView, data: Any, returnClosure: WisdomProtocolReturnClosure) -> UIView
 }

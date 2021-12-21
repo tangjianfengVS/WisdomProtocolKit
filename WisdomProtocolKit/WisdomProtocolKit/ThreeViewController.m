@@ -44,7 +44,7 @@
 }
 
 
-+ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC {
++ (UIViewController * _Nonnull)wisdomProtocolControlObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC {
     ThreeViewController *VC = [[ThreeViewController alloc] init];
     VC.modalPresentationStyle = UIModalPresentationFullScreen;
 
@@ -52,7 +52,7 @@
     return VC;
 }
 
-+ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data {
++ (UIViewController * _Nonnull)wisdomProtocolControlObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data {
     ThreeViewController *VC = [[ThreeViewController alloc] init];
     VC.modalPresentationStyle = UIModalPresentationFullScreen;
 
@@ -60,7 +60,7 @@
     return VC;
 }
 
-+ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data closure:(void (^ _Nonnull)(id _Nonnull))closure {
++ (UIViewController * _Nonnull)wisdomProtocolControlObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data closure:(void (^ _Nonnull)(id _Nonnull))closure {
     ThreeViewController *VC = [[ThreeViewController alloc] init];
     VC.modalPresentationStyle = UIModalPresentationFullScreen;
 
@@ -68,7 +68,7 @@
     return VC;
 }
 
-+ (UIViewController * _Nonnull)wisdomProtocolObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data returnClosure:(id  _Nonnull (^ _Nonnull)(id _Nonnull))returnClosure {
++ (UIViewController * _Nonnull)wisdomProtocolControlObjcClassWithRootVC:(UIViewController * _Nonnull)rootVC data:(id _Nonnull)data returnClosure:(id  _Nonnull (^ _Nonnull)(id _Nonnull))returnClosure {
     ThreeViewController *VC = [[ThreeViewController alloc] init];
     VC.modalPresentationStyle = UIModalPresentationFullScreen;
 

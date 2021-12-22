@@ -55,10 +55,10 @@ public class WisdomProtocolKit: NSObject {
     }
 
     
-    // MARK: - subclass is from WisdomProtocolController
+    // MARK: - subclass is super WisdomProtocolController
     // - parame: AnyClass?
     // - return: Bool
-    @objc public class func isFromWisdomProtocolController(subclass: AnyClass?) -> Bool{
+    @objc public class func isSuperWisdomProtocolController(subclass: AnyClass?) -> Bool{
  
         if let _ = subclass as? WisdomProtocolController.Type {
             return true
@@ -69,10 +69,10 @@ public class WisdomProtocolKit: NSObject {
     }
     
     
-    // MARK: - subclass is from WisdomProtocolView
+    // MARK: - subclass is super WisdomProtocolView
     // - parame: AnyClass?
     // - return: Bool
-    @objc public class func isFromWisdomProtocolView(subclass: AnyClass?) -> Bool{
+    @objc public class func isSuperWisdomProtocolView(subclass: AnyClass?) -> Bool{
  
         if let _ = subclass as? WisdomProtocolView.Type {
             return true

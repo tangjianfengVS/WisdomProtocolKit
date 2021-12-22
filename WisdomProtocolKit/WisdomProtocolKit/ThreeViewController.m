@@ -71,7 +71,7 @@
     Protocol *twoViewVCProtocol = [TwoViewController getProtocol];
     Class tagterCla = [WisdomProtocolKit classFromProtocolFromProtocol: twoViewVCProtocol];
 
-    if ([WisdomProtocolKit isFromWisdomProtocolControllerWithSubclass:tagterCla]) {
+    if ([WisdomProtocolKit isSuperWisdomProtocolControllerWithSubclass:tagterCla]) {
     
         [tagterCla wisdomProtocolControllerClassWithRootVC:self data:[UIColor whiteColor]];
     }

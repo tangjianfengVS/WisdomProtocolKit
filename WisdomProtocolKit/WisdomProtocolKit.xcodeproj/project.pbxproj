@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3E507CA127703EC600CCB8F7 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E507CA027703EC600CCB8F7 /* ThreeViewController.m */; };
-		3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */; };
-		3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */; };
-		3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */; };
-		3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */; };
-		3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */; };
-		3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E732C042769D99200DEB737 /* WisdomProtocol.swift */; };
-		3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */; };
+		3E843D5327741E7100378981 /* WisdomProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D4C27741E7100378981 /* WisdomProtocolConfig.swift */; };
+		3E843D5427741E7100378981 /* WisdomProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D4D27741E7100378981 /* WisdomProtocolManager.swift */; };
+		3E843D5527741E7100378981 /* WisdomProtocolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D4E27741E7100378981 /* WisdomProtocolKit.swift */; };
+		3E843D5627741E7100378981 /* WisdomProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D4F27741E7100378981 /* WisdomProtocolUI.swift */; };
+		3E843D5727741E7100378981 /* WisdomProtocolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D5027741E7100378981 /* WisdomProtocolModel.swift */; };
+		3E843D5827741E7100378981 /* WisdomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D5127741E7100378981 /* WisdomProtocol.swift */; };
+		3E843D5927741E7100378981 /* WisdomProtocolRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E843D5227741E7100378981 /* WisdomProtocolRegist.m */; };
 		3E8DD74527701E0C00128FA7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8DD74427701E0C00128FA7 /* TwoViewController.swift */; };
 		3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABA2768AE24000B5021 /* AppDelegate.swift */; };
 		3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB09ABE2768AE24000B5021 /* ViewController.swift */; };
@@ -26,15 +26,15 @@
 /* Begin PBXFileReference section */
 		3E507C9F27703EC600CCB8F7 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		3E507CA027703EC600CCB8F7 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
-		3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolConfig.swift; sourceTree = "<group>"; };
-		3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolManager.swift; sourceTree = "<group>"; };
-		3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolKit.swift; sourceTree = "<group>"; };
-		3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolUI.swift; sourceTree = "<group>"; };
-		3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolModel.swift; sourceTree = "<group>"; };
-		3E732C042769D99200DEB737 /* WisdomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocol.swift; sourceTree = "<group>"; };
 		3E7BB0A9276C5D9E0038AD9D /* WisdomProtocolKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WisdomProtocolKit-Bridging-Header.h"; sourceTree = "<group>"; };
-		3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolRegist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WisdomProtocolRegist.h; sourceTree = "<group>"; };
-		3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WisdomProtocolRegist.m; sourceTree = "<group>"; };
+		3E843D4B27741E7100378981 /* WisdomProtocolRegist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WisdomProtocolRegist.h; sourceTree = "<group>"; };
+		3E843D4C27741E7100378981 /* WisdomProtocolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolConfig.swift; sourceTree = "<group>"; };
+		3E843D4D27741E7100378981 /* WisdomProtocolManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolManager.swift; sourceTree = "<group>"; };
+		3E843D4E27741E7100378981 /* WisdomProtocolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolKit.swift; sourceTree = "<group>"; };
+		3E843D4F27741E7100378981 /* WisdomProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolUI.swift; sourceTree = "<group>"; };
+		3E843D5027741E7100378981 /* WisdomProtocolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocolModel.swift; sourceTree = "<group>"; };
+		3E843D5127741E7100378981 /* WisdomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WisdomProtocol.swift; sourceTree = "<group>"; };
+		3E843D5227741E7100378981 /* WisdomProtocolRegist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WisdomProtocolRegist.m; sourceTree = "<group>"; };
 		3E8DD74427701E0C00128FA7 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		3EB09AB72768AE24000B5021 /* WisdomProtocolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomProtocolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB09ABA2768AE24000B5021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,25 +56,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E732BFE2769D99200DEB737 /* Source */ = {
+		3E843D4A27741E7100378981 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3E732C012769D99200DEB737 /* WisdomProtocolKit.swift */,
-				3E732C042769D99200DEB737 /* WisdomProtocol.swift */,
-				3E732BFF2769D99200DEB737 /* WisdomProtocolConfig.swift */,
-				3E732C032769D99200DEB737 /* WisdomProtocolModel.swift */,
-				3E732C022769D99200DEB737 /* WisdomProtocolUI.swift */,
-				3E732C002769D99200DEB737 /* WisdomProtocolManager.swift */,
-				3E7BB0AA276C5D9F0038AD9D /* WisdomProtocolRegist.h */,
-				3E7BB0AB276C5D9F0038AD9D /* WisdomProtocolRegist.m */,
+				3E843D4E27741E7100378981 /* WisdomProtocolKit.swift */,
+				3E843D5127741E7100378981 /* WisdomProtocol.swift */,
+				3E843D4C27741E7100378981 /* WisdomProtocolConfig.swift */,
+				3E843D5027741E7100378981 /* WisdomProtocolModel.swift */,
+				3E843D4F27741E7100378981 /* WisdomProtocolUI.swift */,
+				3E843D4D27741E7100378981 /* WisdomProtocolManager.swift */,
+				3E843D4B27741E7100378981 /* WisdomProtocolRegist.h */,
+				3E843D5227741E7100378981 /* WisdomProtocolRegist.m */,
 			);
-			path = Source;
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 		3EB09AAE2768AE24000B5021 = {
 			isa = PBXGroup;
 			children = (
-				3E732BFE2769D99200DEB737 /* Source */,
+				3E843D4A27741E7100378981 /* Source */,
 				3EB09AB92768AE24000B5021 /* WisdomProtocolKit */,
 				3EB09AB82768AE24000B5021 /* Products */,
 			);
@@ -177,17 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E732C082769D99200DEB737 /* WisdomProtocolUI.swift in Sources */,
-				3E7BB0AC276C5D9F0038AD9D /* WisdomProtocolRegist.m in Sources */,
+				3E843D5427741E7100378981 /* WisdomProtocolManager.swift in Sources */,
 				3E507CA127703EC600CCB8F7 /* ThreeViewController.m in Sources */,
+				3E843D5527741E7100378981 /* WisdomProtocolKit.swift in Sources */,
 				3EB09ABF2768AE24000B5021 /* ViewController.swift in Sources */,
-				3E732C052769D99200DEB737 /* WisdomProtocolConfig.swift in Sources */,
-				3E732C062769D99200DEB737 /* WisdomProtocolManager.swift in Sources */,
+				3E843D5627741E7100378981 /* WisdomProtocolUI.swift in Sources */,
+				3E843D5327741E7100378981 /* WisdomProtocolConfig.swift in Sources */,
 				3E8DD74527701E0C00128FA7 /* TwoViewController.swift in Sources */,
-				3E732C0A2769D99200DEB737 /* WisdomProtocol.swift in Sources */,
-				3E732C092769D99200DEB737 /* WisdomProtocolModel.swift in Sources */,
 				3EB09ABB2768AE24000B5021 /* AppDelegate.swift in Sources */,
-				3E732C072769D99200DEB737 /* WisdomProtocolKit.swift in Sources */,
+				3E843D5827741E7100378981 /* WisdomProtocol.swift in Sources */,
+				3E843D5727741E7100378981 /* WisdomProtocolModel.swift in Sources */,
+				3E843D5927741E7100378981 /* WisdomProtocolRegist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

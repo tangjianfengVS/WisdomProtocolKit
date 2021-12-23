@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WisdomProtocolKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A wisdom protocol SDK"
   s.description  = "A wisdom protocol SDK.A protocol specifies the methods and attributes necessary to implement a particular function.
 All types that meet the requirements of the agreement are called conform.
@@ -17,6 +17,6 @@ Classes, structs, or enumerated types can all follow the protocol and provide co
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/tangjianfengVS/WisdomProtocolKit.git", :tag => s.version }
-  s.source_files  = "WisdomProtocolKit/Source/*.{swift,h,m}"
+  s.source_files  = "Source/*.{swift,h,m}"
 
 end

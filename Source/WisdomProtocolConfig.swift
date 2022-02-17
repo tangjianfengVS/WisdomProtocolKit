@@ -20,5 +20,7 @@ public let WisdomProtocols: [String] = [NSStringFromProtocol(WisdomProtocol.self
                                         NSStringFromProtocol(WisdomClassProtocol.self),
                                         NSStringFromProtocol(WisdomRegistProtocol.self),
                                         NSStringFromProtocol(WisdomViewProtocol.self),
-                                        NSStringFromProtocol(WisdomControllerProtocol.self)]
+                                        NSStringFromProtocol(WisdomControllerProtocol.self),
+                                        NSStringFromProtocol(WisdomControllerObjcProtocol.self),
+                                        NSStringFromProtocol(WisdomViewObjcProtocol.self)]
 

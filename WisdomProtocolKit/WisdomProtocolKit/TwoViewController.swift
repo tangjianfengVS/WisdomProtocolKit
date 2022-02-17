@@ -59,7 +59,7 @@ class TwoViewController: WisdomProtocolController, WisdomRegistProtocol {
     static func registProtocolClass() {
         let model = WisdomProtocolConfigModel(configClass: self, configProtocol: TwoViewVCProtocol.self)
 
-        WisdomProtocolKit.registProtocolClassConfigs(configs: [model]) { errorList in
+        WisdomProtocolKit.registProtocolClass(configs: [model]) { errorList in
             print(errorList)
         }
     }

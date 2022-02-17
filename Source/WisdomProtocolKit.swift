@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class WisdomProtocolKit: NSObject {
+@objc public class WisdomProtocolKit: NSObject {
     
     
     // MARK: - regist protocol
@@ -21,9 +21,8 @@ public class WisdomProtocolKit: NSObject {
     
     // MARK: - regist protocol class config module
     // - parame: [WisdomRouterConfigModel]
-    @objc public class func registProtocolClassConfigs(configs: [WisdomProtocolConfigModel],
-                                                       errorClosure: WisdomProtocolErrorClosure){
-        WisdomProtocolManager.shared.registProtocolClassConfigs(configs: configs, errorClosure: errorClosure)
+    @objc public class func registProtocolClass(configs: [WisdomProtocolConfigModel], errorClosure: WisdomProtocolErrorClosure){
+        WisdomProtocolManager.shared.registProtocolClass(configs: configs, errorClosure: errorClosure)
     }
     
     

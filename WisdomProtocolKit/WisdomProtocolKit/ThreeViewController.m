@@ -23,7 +23,7 @@
 + (void)registProtocolClass {
     WisdomProtocolConfigModel *model = [[WisdomProtocolConfigModel alloc] initWithConfigClass:self configProtocol:@protocol(ThreeViewProtocol)];
     
-    [WisdomProtocolKit registProtocolClassConfigsWithConfigs:@[model] errorClosure:^(NSArray<NSString *> * _Nonnull errorList) {
+    [WisdomProtocolKit registProtocolClassWithConfigs:@[model] errorClosure:^(NSArray<NSString *> * _Nonnull errorList) {
         
     }];
 }
